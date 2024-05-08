@@ -30,10 +30,11 @@ int main()
 
 // For loop prompts user to input data 10 times
 	cout << "Enter 10 numbers: " << endl;
+
 	for (index = 0; index < ARRAY_SIZE; ++index)	
     {
-// Input validation (Integers only)
-        while(!(cin >> DATA[index])) 
+
+        while(!(cin >> DATA[index])) // Input validation (Integers only)
         {
             cout << "Invalid input. Please enter a number: " << endl;
             cin.clear();
@@ -60,7 +61,7 @@ int main()
     cout << "Number of odds: " << even_count << endl;
 	cout << "Number of evens: " << odd_count << endl;
 
-//Printed output to file
+// Printed output to file
     outputFile << "Number of odds: " << even_count << endl;
     outputFile << "Number of evens: " << odd_count << endl;
 
