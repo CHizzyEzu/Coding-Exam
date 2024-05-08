@@ -6,10 +6,7 @@
 double COUNTVALUES(int array[],int size, int value) 
 {
 
-// Initialized variables and pointers
-    int i = 0;
-    int *ptr = nullptr;
-    ptr = &i;
+// Initialized variable
     int Howmany = 0;
     
 // For loop that counts how many elements in the array and assigns the amount to value
